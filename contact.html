@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/mobile.css">
+  <title>Turkiston Cargo</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <span id="scrollTopBtn"><i class="fas fa-arrow-up"></i></span>
+  <!--Header-->
+  <header>
+    <div class="container">
+      <div class="header__menu">
+        <a class="logo" href=""><img src="./images/logo.png" alt=""></a>
+        <span><i class="fas fa-bars" onclick="openBtnmenu()"></i></span>
+        <ul class=" menu">
+          <span><i class="fas fa-close" id="closeBtn" onclick="closeBtnmenu()"></i></span>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./contact.html">contact us</a></li>
+          <li><a href="./about.html">about</a></li>
+          <li class="social-media">
+            <a href=""><i class="fab fa-telegram"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </li>
+          <li class="tel">
+            <i class="fas fa-phone-alt"></i>
+            <div class="tel-block">
+              <h4>+386 40 222 455</h4>
+              <a href="">info@demolink.org</a>
+            </div>
+          </li>
+          <li class="location">
+            <i class="fas fa-location-crosshairs"></i>
+            <div class="location-block">
+              <h4>+386 40 222 455</h4>
+              <a href="">info@demolink.org</a>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </header>
+  <!--Contacts-->
+  <div class="contacts__bg" style="margin-top: 75px;">
+    <div class="container">
+      <div class="contacts">
+        <div class="contact__inner">
+          <h2>Let us help you to find a solution that meets your needs</h2>
+          <p class="contact-text">Do you need transport for your cargo by road, sea or air, customised solutions for
+            more
+            demanding project
+            forwarding cases or logistics solutions for your business? Do you have questions or comments regarding our
+            services? Are you interested in our company or the opportunities we can offer?</p>
+          <div class="contact__aloqa">
+            <div class="phone">
+              <i class="fas fa-phone"></i>
+              <div class="phone__text">
+                <p>+998 99 722 03 92</p>
+                <a href="">info@demolink.org</a>
+              </div>
+            </div>
+
+            <div class="location">
+              <i class="fas fa-location"></i>
+              <div class="location__text">
+                <p>Transport ltd. inc. 300</p>
+                <a href="">Pennsylvania Ave NW, Washington</a>
+              </div>
+            </div>
+
+            <div class="clock">
+              <i class="fas fa-clock"></i>
+              <div class="clock__text">
+                <p>9:00 - 18:00</p>
+                <a href="">Monday - Friday</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__form">
+          <h3>Get in touch</h3>
+          <form>
+            <input type="text" placeholder="Name *">
+            <input type="email" placeholder="Email *">
+            <input type="number" placeholder="Phone Number *">
+            <textarea placeholder="Message *"></textarea>
+            <input type="submit" value="send message">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Xarita-->
+  <div class="container">
+    <div class=" xarita">
+      <div id="map" style="width: 100%;" id="contact-map">
+
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <div class="footer__bg">
+    <div class="container">
+      <div class="footer">
+        <div class="footer__block">
+          <a href=""><img src="./images/logo.png" alt=""></a>
+          <p>TransLogic is a leading logistics company that delivers customized supply chain solutions and all related
+            services to meet the unique logistics needs of our customers.</p>
+        </div>
+
+        <div class="footer__block">
+          <h3>Information</h3>
+          <a href="">home</a>
+          <a href="">about</a>
+          <a href="">contact us</a>
+        </div>
+
+        <div class="footer__block">
+          <h3>Contact Us</h3>
+          <address>
+            Washington, USA 6036 Richmond,<br>
+            Phone +1(409)987 5874
+          </address>
+          <a href="">info@demolink.org</a>
+        </div>
+
+        <div class="footer__block">
+          <h3>Social Media</h3>
+          <div class="social">
+            <a href=""><i class="fab fa-telegram"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="./js/contact.js"></script>
+
+</html>
